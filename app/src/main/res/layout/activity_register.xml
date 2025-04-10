@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryVariant"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="337dp"
+        android:layout_height="323dp"
+        android:background="@drawable/rounded_corner">
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="299dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="278dp"
+            android:hint="Email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="299dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="93dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="210dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="235dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="106dp"
+            android:backgroundTint="@color/register"
+            android:text="Register"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="235dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="254dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="29dp"
+            android:backgroundTint="@color/cancel"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
